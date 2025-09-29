@@ -1,19 +1,208 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Portafolio - Manuel Lezcano</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manuel Lezcano — Portafolio</title>
+  <meta name="description" content="Portafolio profesional de Manuel Lezcano - Desarrollador Web Full Stack, WordPress, SEO y Web3." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-<h1>Manuel Lezcano - Desarrollador Web</h1>
-<form id="contactForm" action="https://formspree.io/f/mqayppng" method="POST">
-<label>Nombre <input name="name" type="text" required></label>
-<label>Email <input name="email" type="email" required></label>
-<label>Asunto <input name="subject" type="text" required></label>
-<label>Mensaje <textarea name="message" rows="6" required></textarea></label>
-<button type="submit">Enviar</button>
-</form>
-<script src="script.js"></script>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <h1>Manuel Lezcano</h1>
+        <p class="role">Desarrollador Web Full Stack</p>
+      </div>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#about">Sobre mí</a>
+        <a href="#services">Servicios</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#wordpress">WordPress</a>
+        <a href="#seo">SEO</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <div class="actions">
+        <a class="btn primary" href="#contact">Contrátame</a>
+        <button id="themeToggle" aria-label="Cambiar tema">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h2>Hola, soy <span class="accent">Manuel Lezcano</span></h2>
+          <p class="lead">Ingeniero en Ciencias Informáticas — Desarrollo Web (Frontend & Backend), WordPress, SEO y Web3.</p>
+          <p class="muted">Transformo ideas en productos digitales: ecommerce, plataformas educativas, dashboards y dApps.</p>
+          <div class="hero-cta">
+            <a class="btn primary large" href="#projects">Ver proyectos</a>
+            <a class="btn ghost" href="CV_Manuel_Lezcano.pdf" download>Descargar CV</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="card quick-stats">
+            <h4>Servicios clave</h4>
+            <ul>
+              <li>Full Stack Development</li>
+              <li>WordPress & WooCommerce</li>
+              <li>SEO técnico y rendimiento</li>
+              <li>Integraciones API / Web Services</li>
+            </ul>
+            <p class="small muted">Disponible para freelance y proyectos remotos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h3>Sobre mí</h3>
+      <p>Soy <strong>Manuel Lezcano</strong>, Ingeniero en Ciencias Informáticas con experiencia como administrador de redes y desarrollador web. Combino buenas prácticas de ingeniería con enfoque en rendimiento, accesibilidad y SEO. Trabajo con equipos y clientes para construir soluciones escalables y medibles.</p>
+    </section>
+
+    <section id="services" class="section container">
+      <h3>Servicios</h3>
+      <div class="services-grid">
+        <div class="service">
+          <h4>Desarrollo Web Full Stack</h4>
+          <p>Proyectos desde landing pages hasta aplicaciones completas con APIs, autenticación y despliegue en producción.</p>
+        </div>
+        <div class="service">
+          <h4>WordPress & WooCommerce</h4>
+          <p>Temas y plugins a medida, optimización, migraciones y mantenimiento continuo.</p>
+        </div>
+        <div class="service">
+          <h4>SEO Técnico</h4>
+          <p>Auditorías, optimización de Core Web Vitals, schema y estrategias de contenido para mejorar visibilidad.</p>
+        </div>
+        <div class="service">
+          <h4>Web3 & Blockchain</h4>
+          <p>Integración con wallets Phantom, creación de preventas de tokens en Solana y desarrollo de dApps.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h3>Proyectos destacados</h3>
+      <p class="muted">Selección representativa de proyectos que demuestran alcance técnico y experiencia en diferentes dominios.</p>
+      <div class="projects-grid">
+        <!-- Ejemplos de proyectos -->
+        <article class="card">
+          <h4>ChessBitcoin — Preventa de token</h4>
+          <p>Plataforma para preventa de tokens con integración Phantom Wallet, backend para manejo de órdenes y automatización de transferencias.</p>
+          <p class="tags">Solana · JavaScript · Node.js · PHP</p>
+          <div class="links"><a class="btn" href="#">Ver demo</a> <a class="btn ghost" href="#">Código</a></div>
+        </article>
+
+        <article class="card">
+          <h4>E‑commerce a medida</h4>
+          <p>Tienda online con panel de administración, catálogo dinámico, pasarela de pago y estrategia de optimización para conversiones.</p>
+          <p class="tags">PHP · MySQL · Stripe · SEO</p>
+          <div class="links"><a class="btn" href="#">Ver demo</a></div>
+        </article>
+
+        <article class="card">
+          <h4>Plataforma Educativa</h4>
+          <p>Sistema de cursos con roles, seguimiento de progreso, evaluaciones y administración de contenidos multiplataforma.</p>
+          <p class="tags">React · Node.js · PostgreSQL</p>
+        </article>
+
+        <article class="card">
+          <h4>WordPress Corporativo</h4>
+          <p>Sitios corporativos con diseño personalizado, ACF, optimización de carga y mantenimiento.</p>
+          <p class="tags">WordPress · ACF · PHP</p>
+        </article>
+
+        <article class="card">
+          <h4>Landing Pages (Campañas)</h4>
+          <p>Landing pages orientadas a conversión, con pruebas A/B, tracking y ajustes SEO.</p>
+          <p class="tags">HTML · CSS · JS · Analytics</p>
+        </article>
+
+        <article class="card">
+          <h4>Bots de Telegram</h4>
+          <p>Automatizaciones para atención y procesos: transcripción de audios, traducción y notificaciones.</p>
+          <p class="tags">Python · Telegram API</p>
+        </article>
+
+        <article class="card">
+          <h4>Dashboards & Admin Panels</h4>
+          <p>Interfaces administrativas para control de usuarios, métricas y tareas automatizadas.</p>
+          <p class="tags">React · Node.js · Charting</p>
+        </article>
+
+        <article class="card">
+          <h4>SEO técnico (Armada Digital)</h4>
+          <p>Implementación de auditorías técnicas y mejoras de rendimiento para campañas digitales.</p>
+          <p class="tags">SEO · Core Web Vitals · GSC</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="wordpress" class="section container">
+      <h3>WordPress — Casos y capacidades</h3>
+      <div class="wp-grid">
+        <div class="card">
+          <h4>Desarrollo de temas y plugins</h4>
+          <p>Creación de temas desde cero y plugins funcionales, siguiendo buenas prácticas y seguridad.</p>
+        </div>
+        <div class="card">
+          <h4>WooCommerce</h4>
+          <p>Implementación de tiendas, integraciones de pago y gestión de productos avanzados.</p>
+        </div>
+        <div class="card">
+          <h4>Optimización y mantenimiento</h4>
+          <p>Migraciones, backups, seguridad y optimización para mejores tiempos de carga y SEO.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="seo" class="section container">
+      <h3>SEO & Marketing Digital</h3>
+      <p class="muted">Auditorías y optimización enfocada a resultados medibles.</p>
+      <ul>
+        <li>Auditoría técnica y corrección de problemas de indexación</li>
+        <li>Optimización de meta tags, headings y schema</li>
+        <li>Mejora de Core Web Vitals y rendimiento</li>
+        <li>Estrategias de contenido y linkbuilding</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section container">
+      <h3>Contacto</h3>
+      <p class="muted">Escríbeme directamente o usa el formulario — respondo en 24–48 horas.</p>
+      <div class="contact-grid">
+        <div class="card">
+          <h4>Contacto rápido</h4>
+          <p>Email: <a href="mailto:manuellezkano@gmail.com">manuellezkano@gmail.com</a></p>
+          <p>Teléfono: +53 55556068</p>
+          <p>GitHub: <a href="https://github.com/kasanova-wow">github.com/kasanova-wow</a></p>
+        </div>
+
+        <!-- Formulario con Formspree -->
+        <form id="contactForm" class="card form" method="POST" action="https://formspree.io/f/mqayppng">
+          <label>Nombre <input name="name" type="text" required></label>
+          <label>Email <input name="email" type="email" required></label>
+          <label>Asunto <input name="subject" type="text" required></label>
+          <label>Mensaje <textarea name="message" rows="6" required></textarea></label>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Enviar mensaje</button>
+            <button type="reset" class="btn ghost">Limpiar</button>
+          </div>
+          <div id="formResult" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Manuel Lezcano — Desarrollador Web · <a href="#">Política de privacidad</a></small>
+    </div>
+    <a class="floating-contact" href="mailto:manuellezkano@gmail.com" aria-label="Enviar correo">✉️</a>
+  </footer>
 </body>
 </html>
