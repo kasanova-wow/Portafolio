@@ -1,97 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio | Manuel Lezcano</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+<meta charset="UTF-8">
+<title>Portafolio - Manuel Lezcano</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="container">
-      <h1>Manuel Lezcano</h1>
-      <p>Desarrollador Web Full Stack</p>
-      <nav>
-        <a href="#about">Sobre mí</a>
-        <a href="#skills">Habilidades</a>
-        <a href="#projects">Proyectos</a>
-        <a href="#contact">Contacto</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <h2>Transformando ideas en soluciones digitales</h2>
-      <p>Frontend + Backend | Páginas Web | Servicios Web</p>
-    </div>
-  </section>
-
-  <!-- SOBRE MÍ -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>Sobre mí</h2>
-      <p>
-        Soy desarrollador web con experiencia en <strong>frontend y backend</strong>, 
-        especializado en la creación de páginas web modernas y servicios web escalables. 
-        Me apasiona transformar necesidades en soluciones digitales funcionales y con impacto real.
-      </p>
-    </div>
-  </section>
-
-  <!-- HABILIDADES -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Habilidades</h2>
-      <div class="skills-grid">
-        <div class="skill">HTML5 / CSS3 / JS</div>
-        <div class="skill">React / Vue / Angular</div>
-        <div class="skill">Node.js / Express</div>
-        <div class="skill">PHP / Laravel</div>
-        <div class="skill">Python / Django</div>
-        <div class="skill">MySQL / MongoDB</div>
-        <div class="skill">APIs RESTful</div>
-        <div class="skill">Git / Docker</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROYECTOS -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Proyectos</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>E-commerce</h3>
-          <p>Tienda online con carrito, pagos integrados y panel de administración.</p>
-        </div>
-        <div class="project-card">
-          <h3>Plataforma Educativa</h3>
-          <p>Sistema de cursos en línea con gestión de usuarios y evaluaciones.</p>
-        </div>
-        <div class="project-card">
-          <h3>Preventa Blockchain</h3>
-          <p>Integración con wallets y sistema de preventa de tokens en Solana.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>Email: <a href="mailto:manuellezkano@gmail.com">manuellezkano@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/kasanova-wow" target="_blank">github.com/kasanova-wow</a></p>
-      </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Manuel Lezcano | Todos los derechos reservados</p>
-  </footer>
+<h1>Manuel Lezcano - Desarrollador Web</h1>
+<form id="contactForm" action="https://formspree.io/f/mqayppng" method="POST">
+<label>Nombre <input name="name" type="text" required></label>
+<label>Email <input name="email" type="email" required></label>
+<label>Asunto <input name="subject" type="text" required></label>
+<label>Mensaje <textarea name="message" rows="6" required></textarea></label>
+<button type="submit">Enviar</button>
+</form>
+<script src="script.js"></script>
 </body>
 </html>
